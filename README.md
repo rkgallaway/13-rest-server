@@ -1,34 +1,56 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
+![CF](http://i.imgur.com/7v5ASc8.png) LAB 13
 =================================================
 
-## Project Name
+## lab 13 Rest-Server
 
-### Author: Student/Group Name
+### Author: Ryan Gallaway
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+
+[![Build Status](https://www.travis-ci.com/rkgallaway/13-rest-server.svg?branch=master)](https://www.travis-ci.com/rkgallaway/13-rest-server)
+
+* [repo](https://github.com/rkgallaway/13-rest-server)
+* [travis](https://www.travis-ci.com/rkgallaway/13-rest-server)
+* [back-end](https://lab-13-rest-server-rg.herokuapp.com)
+<!-- * [front-end](http://xyz.com) (when applicable) -->
 
 #### Documentation
-* [swagger](http://xyz.com) (API assignments only)
-* [jsdoc](http://xyz.com) (All assignments)
+<!-- * [swagger](http://xyz.com) (API assignments only) -->
+<!-- * [jsdoc](http://xyz.com) (All assignments) -->
 
 ### Modules
 #### `modulename.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
+## Assignment 1: Data Modeling
+* The provided API server is setup to work, but the data models are incomplete
+* Implement 2 data models, in different manners, using only TDD
+* Do not use the server routes to test the models. Once you're finished the TDD, the server should "just work", so long as your models obey the contract (noted in the routes)
+  * **Categories**
+    * Create this as an in-memory model
+    * The model class should hold and manage the data
+    * The model class should expose methods that match REST verbs
+      * `get()`
+      * `post()`
+      * `put()`
+      * `delete()`
+  * **Products**
+    * Create this as a mongoose model
+    * Create a mongoose schemas for this collection
+    * The model class should expose methods that match REST verbs
+      * `get()`
+      * `post()`
+      * `put()`
+      * `delete()`
+* Write a full suite of tests 
+      
+## Assignment 2: Back Up The Truck...
+Whoops.  Because ... 'reasons', you are being forced to unwind all of that hard work you just did and de-modularize the server code back into a "monolith"
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - Port define in ENV
+ * `MONGODB_URI` - TBD <!-- URL to the running mongo instance/db  -->
 
 #### Running the app
 * `npm start`
