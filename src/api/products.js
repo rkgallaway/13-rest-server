@@ -16,6 +16,13 @@ router.put('/api/v1/products/:id', putProducts);
 router.delete('/api/v1/products/:id', deleteProducts);
 
 // FUNCTIONS
+/**
+ *
+ *
+ * @param {*} request
+ * @param {*} response
+ * @param {*} next
+ */
 function getProducts(request,response,next) {
   // expects an array of objects back
   products.get()
@@ -29,6 +36,13 @@ function getProducts(request,response,next) {
     .catch( next );
 }
 
+/**
+ *
+ *
+ * @param {*} request
+ * @param {*} response
+ * @param {*} next
+ */
 function getProduct(request,response,next) {
   // expects an array with one object in it
   products.get(request.params.id)
@@ -36,6 +50,13 @@ function getProduct(request,response,next) {
     .catch( next );
 }
 
+/**
+ *
+ *
+ * @param {*} request
+ * @param {*} response
+ * @param {*} next
+ */
 function postProducts(request,response,next) {
   // expects the record that was just added to the database
   products.post(request.body)
@@ -44,6 +65,13 @@ function postProducts(request,response,next) {
 }
 
 
+/**
+ *
+ *
+ * @param {*} request
+ * @param {*} response
+ * @param {*} next
+ */
 function putProducts(request,response,next) {
   // expects the record that was just updated in the database
   products.put(request.params.id, request.body)
@@ -51,6 +79,13 @@ function putProducts(request,response,next) {
     .catch( next );
 }
 
+/**
+ *
+ *
+ * @param {*} request
+ * @param {*} response
+ * @param {*} next
+ */
 function deleteProducts(request,response,next) {
   // Expects no return value (the resource should be gone)
   products.delete(request.params.id)
