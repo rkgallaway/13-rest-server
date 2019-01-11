@@ -15,7 +15,7 @@ router.get('/api/v1/categories/:id', getCategory);
 router.put('/api/v1/categories/:id', putCategories);
 router.delete('/api/v1/categories/:id', deleteCategories);
 
-// FUNCTIONS
+// FUNCTIONS.
 /**
  *
  *
