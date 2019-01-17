@@ -12,7 +12,6 @@
 * [repo](https://github.com/rkgallaway/13-rest-server)
 * [travis](https://www.travis-ci.com/rkgallaway/13-rest-server)
 * [back-end](https://lab-13-rest-server-rg.herokuapp.com)
-<!-- * [front-end](http://xyz.com) (when applicable) -->
 
 #### Documentation
 <!-- * [swagger](http://xyz.com) (API assignments only) -->
@@ -50,7 +49,7 @@ Whoops.  Because ... 'reasons', you are being forced to unwind all of that hard 
 ### Setup
 #### `.env` requirements
 * `PORT` - Port define in ENV
- * `MONGODB_URI` - TBD <!-- URL to the running mongo instance/db  -->
+ * [`MONGODB_URI` click](mongodb://heroku_v8g738d2:v49rqr9l6ls5arcabhpc68afn0@ds153814.mlab.com:53814/heroku_v8g738d2)
 
 #### Running the app
 * `npm start`
