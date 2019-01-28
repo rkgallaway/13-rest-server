@@ -13,7 +13,7 @@ const schema = {
 class Products {
 
   /**
-   *Creates an instance of Products.
+   *Class of Products.
    * @memberof Products
    */
   constructor() {
@@ -21,10 +21,10 @@ class Products {
   }
 
   /**
-   *
+   *gets item by id
    *
    * @param {*} id
-   * @returns
+   * @returns gets item by id
    * @memberof Products
    */
   get(id) {
@@ -33,10 +33,10 @@ class Products {
   }
   
   /**
-   *
+   *posts new record
    *
    * @param {*} entry
-   * @returns
+   * @returns posts new record
    * @memberof Products
    */
   post(entry) {
@@ -47,11 +47,11 @@ class Products {
   }
 
   /**
-   *
+   * put / update existing record
    *
    * @param {*} id
    * @param {*} entry
-   * @returns
+   * @returns updated record
    * @memberof Products
    */
   put(id, entry) {
@@ -61,10 +61,10 @@ class Products {
   }
 
   /**
-   *
+   * delete item by ud
    *
    * @param {*} id
-   * @returns
+   * @returns deleted item by id
    * @memberof Products
    */
   delete(id) {
@@ -73,10 +73,10 @@ class Products {
   }
 
   /**
-   *
+   * sanitizes db
    *
    * @param {*} entry
-   * @returns
+   * @returns sanitized db
    * @memberof Products
    */
   sanitize(entry) {
