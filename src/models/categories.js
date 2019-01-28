@@ -5,17 +5,17 @@ const categoriesModel = require('./categories-schema.js');
 class Categories {
 
   /**
-   *Creates an instance of Categories.
+   *Class 0f Categories.
    * @memberof Categories
    */
   constructor() {
   }
 
   /**
-   *
+   * get by id
    *
    * @param {*} _id
-   * @returns
+   * @returns categories model
    * @memberof Categories
    */
   get(_id) {
@@ -24,10 +24,10 @@ class Categories {
   }
   
   /**
-   *
+   * post new record
    *
    * @param {*} record
-   * @returns
+   * @returns saved record
    * @memberof Categories
    */
   post(record) {
@@ -36,11 +36,11 @@ class Categories {
   }
 
   /**
-   *
+   * put /update record
    *
    * @param {*} _id
    * @param {*} record
-   * @returns
+   * @returns update by id
    * @memberof Categories
    */
   put(_id, record) {
@@ -48,10 +48,10 @@ class Categories {
   }
 
   /**
-   *
+   *delete by id
    *
    * @param {*} _id
-   * @returns
+   * @returns delete by id
    * @memberof Categories
    */
   delete(_id) {

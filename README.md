@@ -14,11 +14,19 @@
 * [back-end](https://lab-13-rest-server-rg.herokuapp.com)
 
 #### Documentation
-<!-- * [swagger](http://xyz.com) (API assignments only) -->
-<!-- * [jsdoc](http://xyz.com) (All assignments) -->
+* [swagger](https://github.com/rkgallaway/13-rest-server/blob/master/docs/config/swagger.json) (API assignments only)
+* [jsdoc](https://github.com/rkgallaway/13-rest-server/blob/master/docs/index.html) (All assignments)
 
 ### Modules
-#### `modulename.js`
+#### `api/categories.js`
+#### `api/products.js`
+#### `middleware/404.js`
+#### `middleware/error.js`
+#### `models/categories-schema.js`
+#### `models/categories.js`
+#### `models/products-schema.js`
+#### `models/products.js`
+
 ##### Exported Values and Methods
 
 ## Assignment 1: Data Modeling
